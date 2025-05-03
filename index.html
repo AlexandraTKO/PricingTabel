@@ -29,14 +29,18 @@
         background-color: rgb(239, 239, 239);
       padding: 1rem 2rem;
     width: 30rem;
+  
       }
 
       .plan-button {
         background-color: orangered;
         color: white;
         border-radius: 3px;
-        border: 2px solid orangered;
-        padding: 5px 10px;
+        border:  orangered;
+        padding: 7px;
+        width: 4rem;
+        margin: 1rem auto 0 auto;
+        display: bloc;
       }
 
       .plan-title, .plan-price {
@@ -57,6 +61,13 @@
       }
       /* Hint: What can you do with a media query and flexbox? */
       @media (max-width: 1250px) {
+        .pricing-container {
+          flex-direction: column;
+          gap: 1rem;
+        }
+        .pricing-plan {
+          width: 80%;
+        }
       }
     </style>
   </head>
